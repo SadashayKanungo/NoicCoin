@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NoicCoin</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #ccc; font-size: large;">
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12 jumbotron text-center">
+            <h1 class="text-center"><strong>NoicCoin</strong><br>ICO SALE</h1>
+            <p>Introducing Noic Coin an ERC-20 token</p>
+        </div>
+        <div id="loader">
+          <p class="text-center ">Loading...</p>
+        </div>
+        <div id="content" class="text-center" >
+          <p>
+            Current price : <strong><span class="token-price"></span></strong> Ether.<br>
+            Your Balance : <strong><span class="balance"></span></strong>&nbsp;Noic Coins.
+          </p>
+          <br/>
+          <form onSubmit="App.buyTokens(); return false;" role="form">
+            <div class="form-group">
+              <div class="input-group">
+                <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
+                </input>
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
+                </span>
+              </div>
+            </div>
+          </form>
+          <br>
+           <div class="progress" style="min-height: 10px;">
+              <div id="progress" class="progress-bar progress-bar-striped bg-info active" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
+          <hr>
+          <p>Your Account : <span id="accountAddress"></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

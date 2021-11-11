@@ -1,0 +1,17 @@
+{
+    "name": "noiccoin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "truffle.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts":{
+        "dev":"lite-server"
+    },
+    "author": "SK",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    }
+}
