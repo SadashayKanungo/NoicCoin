@@ -60,6 +60,15 @@ App = {
         App.render();
       })
     })
+    App.contracts.NoicCoin.deployed().then(function(instance){
+      instance.Transfer({}, {
+        fromBlock: 0,
+        toBlock: 'latest'
+      }).watch(function(error, event){
+        console.log("Transfer event triggered", event);
+        App.render();
+      })
+    })
   },
 
   render: function(){
@@ -124,6 +133,24 @@ App = {
       });
     }).then(function(result){
       console.log("Tokens bought");
+      $('form').trigger('reset');
+    })
+  },
+
+  transferTokens: function(){
+    content.hide();
+    loader.show();
+    var numberOfTokensToTransfer = $('#numberOfTokensToTransfer').val();
+    var addressToTransfer = $('#addressToTransfer').val();
+
+    App.contracts.NoicCoin.deployed().then(function(instance){
+      return instance.transfer(addressToTransfer, numberOfTokensToTransfer, {
+        from: App.account,
+        value: "0x0",
+        gas: 500000
+      });
+    }).then(function(result){
+      console.log("Tokens transfered");
       $('form').trigger('reset');
     })
   }
