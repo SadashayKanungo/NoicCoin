@@ -1,0 +1,87 @@
+Compiling your contracts...
+===========================
+√ Fetching solc version list from solc-bin. Attempt #1
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\noiccoin.sol
+> Compiling .\contracts\noicsale.sol
+√ Fetching solc version list from solc-bin. Attempt #1
+> Artifacts written to C:\Users\sadas\Desktop\NoicCoin\build\contracts
+> Compiled successfully using:
+   - solc: 0.5.17+commit.d19bba13.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x1312a7961995f39cb2424cacbb29e5aa367c4a8ab8c8a40554715631a6b1c421
+   > Blocks: 0            Seconds: 5
+   > contract address:    0xAc3217C04c6BF65997f18EF65c1F9e69888D4317
+   > block number:        9640941
+   > block timestamp:     1636896660
+   > account:             0x6788c1925F87c53DDe5BB5d3F9fA27B5F8e2e274
+   > balance:             18.749516892497294598
+   > gas used:            193243 (0x2f2db)
+   > gas price:           2.500000014 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000483107502705402 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000483107502705402 ETH
+
+
+2_deploy_contracts.js
+=====================
+Admin : 0x6788c1925f87c53dde5bb5d3f9fa27b5f8e2e274
+
+   Deploying 'NoicCoin'
+   --------------------
+   > transaction hash:    0x269fb63d620809828b45c4b1b6f1e2fc49288464c93ff6795f032916f8682123
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x81d53B40fb3C8a998E62bf69007Ff86e085Cb5f8
+   > block number:        9640943
+   > block timestamp:     1636896690
+   > account:             0x6788c1925F87c53DDe5BB5d3F9fA27B5F8e2e274
+   > balance:             18.747225619983592701
+   > gas used:            870771 (0xd4973)
+   > gas price:           2.500000015 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002176927513061565 ETH
+
+
+   Deploying 'NoicSale'
+   --------------------
+   > transaction hash:    0x6402b652e95a04f4e7fca1a8bd48e3adb5d6f831787404b9201e67df1c28c5b5
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x88D0F235a83e0e46b4C2453D66139aCfC64fa2e5
+   > block number:        9640944
+   > block timestamp:     1636896705
+   > account:             0x6788c1925F87c53DDe5BB5d3F9fA27B5F8e2e274
+   > balance:             18.745989639976671213
+   > gas used:            494392 (0x78b38)
+   > gas price:           2.500000014 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001235980006921488 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.003412907519983053 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.003896015022688455 ETH
