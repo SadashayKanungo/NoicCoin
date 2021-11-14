@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-lg-12 jumbotron text-center pb-0">
             <h1 class="text-center"><strong>NoicCoin</strong></h1>
-            <p>ERC-20 token deployed on Rinkeby Test Network</p>
+            <p>A Fixed-Price ERC-20 Token<br>deployed on Rinkeby Test Network</p>
             <hr>
             <p class="h4">Your Account<br><strong><span id="accountAddress" style="font-size:small;"></span></strong></p>
         </div>
@@ -21,11 +21,11 @@
           <br>
           <p class="text-center ">Loading...</p>
         </div>
-        <div id="content" class="text-center h2" >
+        <div id="content" class="d-flex flex-column align-items-center" style="min-width:100%;" >
           
           <br>
-          <p>
-            Current price : <strong><span class="token-price"></span></strong>&nbsp;ETH<br>
+          <p class="h3 text-center">
+            Token Price : <strong><span class="token-price"></span></strong>&nbsp;ETH<br>
             Your Balance : <strong><span class="balance"></span></strong>&nbsp;NOIC
           </p>
           <br>
@@ -58,22 +58,32 @@
           </form>
 
           <br>
-          <div class="progress m-2" style="min-height: 10px;">
-            <div id="progress" class="progress-bar progress-bar-striped bg-info active" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress bg-light" style="min-width: 100%;">
+            <div id="progress" class="progress-bar progress-bar-striped bg-dark active" style="min-height: 15px;" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
-          <p style="font-size: small; margin-bottom: 5%;"><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
+          <p style="font-size: small; margin-bottom: 5%;"><span class="tokens-sold"></span> / <span class="tokens-available"></span> Tokens Sold</p>
         </div>
       </div>
     </div>
     
+    
     <div id="icons" class="text-center" style="opacity:75%; padding-bottom:2%; background-color: #888;">
+      <hr>
+      <div class="d-flex justify-content-center" style="min-width:100%;">
+        <strong>
+          <a href="https://rinkeby.etherscan.io/address/0x81d53B40fb3C8a998E62bf69007Ff86e085Cb5f8" target="blank" class="text-light p-2">Token Contract</a>
+          <a href="https://rinkeby.etherscan.io/address/0x88D0F235a83e0e46b4C2453D66139aCfC64fa2e5" target="blank" class="text-light p-2">Sale Contract</a>
+          <a href="https://github.com/SadashayKanungo/NoicCoin" target="blank" class="text-light p-2">Source Code</a>
+        </strong>
+      </div>
       <hr>
       <a href="https://www.linkedin.com/in/sadashay-kanungo-22a4321a0/"><img src="https://img.icons8.com/material/48/000000/linkedin--v1.png"/></a>
       <a href="https://github.com/SadashayKanungo"><img src="https://img.icons8.com/material-outlined/48/000000/github.png"/></a>
       <a href="https://www.instagram.com/sadashay_kanungo/"><img src="https://img.icons8.com/material/48/000000/instagram-new--v1.png"/></a>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/web3.min.js"></script>

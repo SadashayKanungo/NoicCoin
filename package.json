@@ -6,12 +6,17 @@
     "directories": {
         "test": "test"
     },
-    "scripts":{
-        "dev":"lite-server"
+    "scripts": {
+        "dev": "lite-server"
     },
     "author": "SK",
     "license": "ISC",
     "devDependencies": {
         "lite-server": "^2.6.1"
+    },
+    "dependencies": {
+        "@truffle/hdwallet-provider": "^1.6.0",
+        "fs": "0.0.1-security",
+        "pify": "^5.0.0"
     }
 }
