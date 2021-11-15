@@ -161,6 +161,7 @@ App = {
 
 $(function() {
   $(window).load(function() {
+    alert("Connect to the website from your Metamask Wallet and switch to the Rinkeby Test Network");
     App.init();
   })
 });
